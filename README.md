@@ -11,4 +11,7 @@ This project made by a group of 2:<br>
 (1) Jeevittan<br>
 (2) Sakinah
 
+<br>
+Demo: https://jeevittan.github.io/TypingGame/
+
 
