@@ -7,8 +7,8 @@ Tech stack: HTML, CSS, JavaScript, Bootstrap
 Report:
 Unsuccessful attempt for detect user input and match the randomly chosen word
 <br><br>
-This project made by a group of 2:
-(1) Jeevittan
+This project made by a group of 2:<br>
+(1) Jeevittan<br>
 (2) Sakinah
 
 
