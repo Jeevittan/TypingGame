@@ -1,74 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
 body {
-    background-image: linear-gradient(230deg, #B2B8A3, #DEEDF0, #F4C7AB);
-    width: 100%;
-    height: 100%;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    overflow: hidden;
+  background-image: linear-gradient(230deg, #b2b8a3, #deedf0, #f4c7ab);
+  width: 100%;
+  height: 100%;
+  font-family: "Mochiy Pop P One", sans-serif;
+  overflow: hidden;
 }
-
-p{
-    font-family: 'Indie Flower', cursive;
-    font-size: 25px;
-    color: #444141;
-    padding: 0% 8%;
-}
-.container {
-    margin: 8%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0%;
-    background-color: #EDF6E5;
-    text-align: center;
-    border-radius: 25px;
-    
-}
-
-
 
 .title {
-    margin: 3% 0%;
-    background-color: #78DEC7;
-    padding: 3% 0%;
-    color: azure;
+  margin: 3% 0%;
+  background-color: #ffab76;
+  padding: 3% 0%;
+  color: azure;
+  font-family: "Mochiy Pop P One", sans-serif;
+  border-radius: 25px 25px 0px 0px;
+}
 
-    border-radius: 25px 25px 0px 0px;
+.container {
+  margin: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0%;
+  background-color: #edf6e5;
+  text-align: center;
+  border-radius: 25px;
 }
 
 .column {
-    float: left;
-    width: 50%;
-    padding: 10px 0px;
-    margin-top: 29px;
+  float: left;
+  width: 50%;
+  padding: 10px 0px;
+  margin-top: 29px;
 }
 
-
-h2 {
-    font-size: 2rem;
-    font-family: 'Be Vietnam Pro', sans-serif;
-}
-
-h3 {
-    margin: 5% 0%;
-    margin-top: 1%;
-    padding: 2%;
-    font-size: 3.5rem;
-}
-
-.row {
-    
-}
-  
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.btn{
-    padding: 1% 8%;
-    border-radius: 18px;
-    background-color: #FF7272;
-    font-family: 'Montserrat', sans-serif;
+.btn {
+  padding: 1% 8%;
+  border-radius: 18px;
+  background-color: #ff7272;
+}
+
+/* Text elements */
+h2 {
+  font-size: 2rem;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+h3 {
+  font-family: "Caveat", cursive;
+  margin: 5% 0%;
+  margin-top: 1%;
+  padding: 2%;
+  font-size: 5rem;
+  color: #086e7d;
+}
+p {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  color: #444141;
+  padding: 0% 8%;
 }
