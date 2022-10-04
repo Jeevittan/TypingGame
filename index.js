@@ -5,11 +5,16 @@ var initScore = document.querySelector(".score");
 var button = document.querySelector("button");
 var score = 0;
 var time = 20;
-var typed;
+var index = 0;
+var random;
+var correct = new Audio("musics/correct.mp3");
+var gameOver = new Audio("musics/gameOver.mp3");
+gameOver.load();
 
 // Play music when start button is clicked
 document.querySelector("button").addEventListener("click", function (e) {
   var gameMusic = new Audio("musics/test2.mp3");
+  index = 1;
   countdown();
   gameMusic.play();
   selectRandomWord(e);
@@ -24,7 +29,10 @@ function countdown() {
     time--;
     updateTimer.innerHTML = time;
     if (time === 0) {
-      alert("Game over! Your score is " + score);
+      gameOver.play();
+      setTimeout(function () {
+        alert("Game over! Your score is " + score);
+      }, 3000);
       initScore.innerHTML = "0";
       words.innerHTML = "";
       button.disabled = false;
@@ -56,13 +64,24 @@ const wordsList = [
 ];
 
 // Function to select random word from the list
-function selectRandomWord(e) {
+function selectRandomWord() {
   // words.innerHTML = "";
-  var random = Math.floor(Math.random() * 15);
+  random = Math.floor(Math.random() * 15);
   words.innerHTML = wordsList[random];
 }
 
-// function checkTypedWord(currWord) {
-//     var x = document.getElementByClass("input").value;
-//     typed.push(x);
-// }
+document.addEventListener(
+  "keypress",
+  (letter) => {
+    if (index == words.innerHTML.length) {
+      correct.play();
+      score += 1;
+      initScore.innerHTML = score;
+      selectRandomWord();
+      index = 1;
+    } else if (letter.key == words.innerHTML[index - 1]) {
+      index += 1;
+    }
+  },
+  false
+);
